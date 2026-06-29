@@ -1,0 +1,65 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+scroll-behavior: smooth;
+}
+
+body {
+  font-family: Oswald;
+  overflow-x: hidden;
+  background-color: #4AB5D0; 
+}
+
+/* Header */
+header {
+  background-color: #FFD87D;
+  color: black; 
+  border-bottom-style: solid ; /* or other styles like dotted, dashed, etc. */
+  border-bottom-width: 10px;
+  border-bottom-color: #06385c;
+  box-shadow: 0 9px 10px -1px #06385c;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 1em;
+  width: 100%;
+  background-color: #FFD87D;
+}
+
+nav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+}
+
+nav a:hover {
+  background-color: #005f88;
+  color: white;
+}
+
+#top {
+	background-color: #4AB5D0;
+}
+
+img { 
+width: 100%; height: auto; 
+}
