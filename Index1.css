@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #4AB5D0; 
+    color: #555555; 
+    font-family: montserrat, sans-serif; 
+}
+
+#wrapper {
+    background-color:#4AB5D0; 
+;
+    background-image: linear-gradient(to bottom, #ffffff, #90C7E3);
+}
+
+header{ 
+    background-color: #ecce8de7;
+    color: #339cd8; 
+    text-align: center;
+}
+
+header a{ 
+    text-decoration: none;
+}
+
+header a:link{ 
+    color: #a09696; 
+}
+header a:visited{ 
+    color: #FFFFFF; 
+}
+header a:hover{ 
+    color: #90C7E3; 
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: Georgia, 'Times New Roman', serif;
+    letter-spacing: 0.25em;
+}
+
+nav{
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0;
+}
+
+nav li{ 
+    border-bottom: 1px solid #000033 ;
+}
+
+nav ul { 
+    list-style-type: none;
+    font-size: 1.2em;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav a { 
+    text-decoration: none;
+}
+
+nav a:link { 
+    color: #5C7FA3;
+}
+
+nav a:visited { 
+    color: #344873;
+}
+
+nav a:hover { 
+    color: #A52A2A;
+}
+
+main { 
+    background-color: #FFFFFF;
+    padding-left: 30px;
+    padding: 1px 20px 20px 30px;
+    overflow: auto;
+    display: block;
+}
+
+h2{ 
+    color: #1976D2; 
+    font-family: Georgia, 'Times New Roman', serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+h3{ 
+    color: #000033;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Reservation Form */
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+input, textarea {
+    margin-bottom: .5em;
+}
+
+input {
+    padding: .5em;
+}
+
+main ul{
+    list-style-image: url('images/marker.gif');
+}
+
+dt{ 
+    color: #002171; 
+}
+
+footer{ 
+    background-color: #FFFFFF;
+    font-size: 75%;
+    font-style: italic;
+    padding: 2em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.resort {  
+    color: #1976D2; 
+    font-weight: bold; 
+}   
+
+#contact{
+    font-size: 90%;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url('images/T1D.TOP.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#diabeteshero {
+    height: 300px;
+    background-image: url('images/type1_diabetes-2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#resourceshero {
+    height: 300px;
+    background-image: url('images/resources4you.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#contacthero {
+    height: 300px;
+    background-image: url('images/wearet1d.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+table {
+    border-spacing: 0;
+    border: 2px solid #3399CC;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #3399CC;
+    padding: 0.5em;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+img {
+  max-width: 400px; /* never exceed container width */
+  height: auto;    /* keeps proportions */
+  margin: 0 auto;
+}
+
+
+
+/*Medium/tablet layout*/
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav li {
+        border-bottom: none;
+    }
+    section {
+        margin-right: 2em;
+        flex: 1;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 6em 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+    }
+
+    #submit {
+        grid-column: 2/3;
+        width: 9em;
+    }
+    .flow{
+    display: flex;
+    flex-direction: row; 
+    }
+}
+
+@media (min-width: 1024px){
+    #wrapper {
+        margin:auto;
+        width: 80%;
+        border: 1px solid #002171;
+        box-shadow: 3px 3px 3px #002171;
+    }
+    nav{
+        text-align: left;
+        paddin
+    @supports (display: grid){
+        nav ul{
+            flex-direction: column;
+            padding-top: 1g-left: 1em;
+    }em;
+        }
+        .hero {
+            grid-area: hero;
+        }
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer;
+        }
+        #wrapper {
+            display: grid;
+            grid-template: "header header"
+                            "nav hero"
+                            "nav main"
+                            "nav footer"
+                            /180px 1fr;
+        }
+    }
+}

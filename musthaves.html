@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Type One Smart</title>
+     <link rel="stylesheet" href="Index1.css">
+    </head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index1.html">Type One Smart</a></h1>
+        </header> 
+        <nav>
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="diabetes.html">Diabetes</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="musthaves.html">T1D Must-Haves</a></li>
+            </ul>
+        </nav>
+
+        <div id="homehero" class="hero">
+    </div>
+
+	  <!-- Push content below fixed header -->
+	  <main>
+	  
+		<section id="top">
+		<h1>Focus on What You Can Control</h1>
+		</section>
+		<section id="nutrition">
+		<h1>Diabetic Friendly Nutrition and Recipies</h1>
+		<article>Use this Must Have Recipie Diary to help you log Low Carb meals or food that is low in the Glycemic Index! 
+		<p>
+  <a class="gi-link"
+     href="https://www.diabetes.ca/DiabetesCanadaWebsite/media/Managing-My-Diabetes/Tools%20and%20Resources/glycemic-index-food-guide.pdf?ext=.pdf">
+     Learn More About the Glycemic Index here!
+  </a>
+</p>
+		
+		</article>
+		<aside>
+    <div id="ingredients-container"></div>
+<button onclick="addIngredient()">Add Ingredient</button>
+<select id="suggestions" onchange="addSuggestedIngredient()">
+  <option value="">Add a Low-GI Ingredient</option>
+  <option value="Broccoli,4,35,10">Broccoli</option>
+  <option value="Quinoa,39,222,53">Quinoa</option>
+  <option value="Sweet Potato,27,112,44">Sweet Potato</option>
+  <option value="Lentils,20,116,32">Lentils</option>
+  <option value="Apples,14,95,38">Apple</option>
+</select>
+<button onclick="analyzeRecipe()">Analyze Recipe</button>
+<button onclick="saveRecipe()">Save Recipe</button>
+<button onclick="loadRecipe()">Load Recipe</button>
+
+<div id="results"></div>
+</aside>
+  </section>
+	  </main>
+	  <footer>
+		<p><a href="#top"><img src="typeone_logo.png" alt="T1S Footer Image" /></a></p>
+		<p>
+		  <a href="https://iftweb.eng.asu.edu/student826/www/typeonesmart/typeone.html" style="color: black; text-decoration: none;">Type One Smart</a><br />
+	    Calexico, CA 92231
+		</p>
+	  </footer>
+	  
+	    <script src="script.js"></script>
+	</body>
+</html>
